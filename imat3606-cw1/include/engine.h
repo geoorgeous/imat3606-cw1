@@ -30,6 +30,12 @@
 //! Primary namespace for FYP project
 namespace engine {
 
+	//! All things related to graphics and rendering.
+	namespace graphics {}
+
+	//! All things related to mathematics.
+	namespace maths {}
+
 	//! Helpful utility functions functionality.
 	namespace utils {}
 
