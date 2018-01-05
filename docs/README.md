@@ -12,7 +12,7 @@ Welcome to the repository for my IMAT3606 (Games Programming) project! This proj
  
  ---
 
-### Directory Structure
+## Directory Structure
 
 The project directory is laid out as follows:
  - __dependencies__: All third party project dependencies. 
@@ -29,7 +29,7 @@ The project directory is laid out as follows:
    
 ---
 
-### Project Dependencies
+## Project Dependencies
 
 My project depends on various third-party libraries and source code. See below for a listing of these libraries.
  
