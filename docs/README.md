@@ -8,7 +8,7 @@ Welcome to the repository for my IMAT3606 (Games Programming) project! This proj
  - Data-driven engine architecture
  - Object serialization and parsing (JSON)
  
- ### [Read the documentation!](https://george-mcdonagh.github.io/imat3606-cw1/documentation/)
+### [Read the documentation!](https://george-mcdonagh.github.io/imat3606-cw1/documentation/)
  
  ---
 
