@@ -12,7 +12,7 @@ Welcome to the repository for my IMAT3606 (Games Programming) project! This proj
  - Data-driven engine architecture
  - Object serialization and parsing (JSON)
 
-</br>
+
 
 The project directory is laid out as follows:
  - __dependencies__: All third party project dependencies. 
@@ -27,7 +27,7 @@ The project directory is laid out as follows:
    - __src__: Project source files.
    - __temp__: Visual Studio intermediate/temporary files for each build configuration.
 
-</br>
+
 
 My project depends on various third-party libraries and source code. See below for a listing of these libraries.
  
