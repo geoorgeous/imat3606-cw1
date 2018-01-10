@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file window.h
- * @brief Header file for the Window class.
- * @author George McDonagh */
+  * @file window.h
+  * @brief Header file for the Window class.
+  * @author George McDonagh */
 
 
 // External includes

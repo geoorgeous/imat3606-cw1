@@ -22,9 +22,11 @@
 
 // Macros
 
+// Assert x is true; break if false.
 #define ASSERT(x)\
 	if(!(x)) __debugbreak();
 
+// use when calling functions that might raise an OpenGL error.
 #define GL_CALL(x)\
 	engine::utils::Logger::glClearErrorQueue();\
 	x;\
@@ -117,26 +119,12 @@ namespace engine { namespace utils {
 		  * @param backColour The colour to use for the stirng's background. */
 		static void log(ConsoleColour foreColour, ConsoleColour backColour, const char* fmt, fmt::ArgList args);
 
-		//! Logs a warning string.
-		/*! Logs the specified string as a warning, using the warning log colour settings (yellow text on black background).
-		  * @param warning The warning string to output to the console. */
-		static void logWarning(const char* warning, fmt::ArgList args);
-
-		//! Logs an error string.
-		/*! Logs the specified string as an error, using the error log colour settings (red text on black background).
-		  * @param error The error string to output to the console. */
-		static void logError(const char* error, fmt::ArgList args);
-
 	public:
 		// Create overides of the above functions with variable-number of arguments using the fmt library FMT_VARIADIC macro...
 
-		FMT_VARIADIC(static void, log, const char *)
+		FMT_VARIADIC(static void, log, const char*)
 
-		FMT_VARIADIC(static void, log, ConsoleColour, ConsoleColour, const char *)
-
-		FMT_VARIADIC(static void, logWarning, const char *)
-
-		FMT_VARIADIC(static void, logError, const char *)
+		FMT_VARIADIC(static void, log, ConsoleColour, ConsoleColour, const char*)
 	};
 
 } }

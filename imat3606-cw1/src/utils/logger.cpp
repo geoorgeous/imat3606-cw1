@@ -37,22 +37,6 @@ void Logger::log(ConsoleColour foreColour, ConsoleColour backColour, const char*
 	setForeColour(oldForeColour);
 }
 
-void Logger::logWarning(const char* fmt, fmt::ArgList args)
-{
-	setForeColour(ConsoleColour::LOG_CC_YELLOW);
-	log(fmt, args);
-	setBackColour(oldBackColour);
-	setForeColour(oldForeColour);
-}
-
-void Logger::logError(const char* fmt, fmt::ArgList args)
-{
-	setForeColour(ConsoleColour::LOG_CC_RED);
-	log(fmt, args);
-	setBackColour(oldBackColour);
-	setForeColour(oldForeColour);
-}
-
 void Logger::logNewLine()
 {
 	log("\n");
