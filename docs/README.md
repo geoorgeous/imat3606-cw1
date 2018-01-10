@@ -8,24 +8,22 @@ Welcome to the repository for my IMAT3606 (Games Programming) project! This proj
  - Data-driven engine architecture
  - Object serialization and parsing (JSON)
  
-### [Read the documentation!](https://george-mcdonagh.github.io/imat3606-cw1/documentation/)
- 
  ---
 
 ## Directory Structure
 
 The project directory is laid out as follows:
- - __dependencies__: All third party project dependencies. 
-   - __include__: Library include files (.h/.hpp).
-   - __libs__: Library binary files (.lib).
- - __docs__: All project realted documents.
-   - __documentation__: doxygen-generated documentation.
- - __imat3606-cw1__: Visual Studio solution folder.
-   - __bin__: Project binaries (Debug/Release, Win32/x64).
-   - __include__: Project header files.
-   - __res__: Project resources (assets, data files, etc).
-   - __src__: Project source files.
-   - __temp__: Visual Studio intermediate/temporary files for each build configuration.
+ - __```./dependencies/```__: All third party project dependencies. 
+   - __```include/```__: Library include files (.h/.hpp).
+   - __```libs/```__: Library binary files (.lib).
+ - __```./docs/```__: All project realted documents.
+   - __```documentation/```__: doxygen-generated documentation.
+ - __```./imat3606-cw1/```__: Visual Studio solution folder.
+   - __```bin/```__: Project binaries (Debug/Release, Win32/x64).
+   - __```include/```__: Project header files.
+   - __```res/```__: Project resources (assets, data files, etc).
+   - __```src/```__: Project source files.
+   - __```temp/```__: Visual Studio intermediate/temporary files for each build configuration.
    
 ---
 
@@ -33,17 +31,18 @@ The project directory is laid out as follows:
 
 My project depends on various third-party libraries and source code. See below for a listing of these libraries.
  
-Name | Use
+__Name__ | __Use__
 --- | ---
-[__GLEW__](http://glew.sourceforge.net/) | OpenGL extension wrangler - loads all of the OpenGL implementation's function headers
-[__GLFW__](http://www.glfw.org/) | OpenGL context creation
-[__Assimp__](http://assimp.sourceforge.net/) | 3D asset importing
-[__DearImgui__](https://github.com/ocornut/imgui) | Easy to use, easy to implement, extensive immediate-mode GUI
-[__stb_image.h__](https://github.com/nothings/stb/blob/master/stb_image.h) | Single header file for image file reading
+[__GLEW__](http://glew.sourceforge.net/) | OpenGL extension wrangler - loads all of the OpenGL implementation's function headers.
+[__GLFW__](http://www.glfw.org/) | OpenGL context creation.
+[__Assimp__](http://assimp.sourceforge.net/) | 3D asset importing.
+[__DearImgui__](https://github.com/ocornut/imgui) | Easy to use, easy to implement, extensive immediate-mode GUI.
+[__stb_image.h__](https://github.com/nothings/stb/blob/master/stb_image.h) | Single header file for image file reading.
 [__fmt__](https://github.com/fmtlib/fmt) | C++ safe `printf` alternative used for logging. Allows for fast print-string formatting.
+[__jsoncpp__](https://github.com/open-source-parsers/jsoncpp) | C++ library for interacting with JSON.
 
 While [GLM](https://glm.g-truc.net/0.9.8/index.html) is generally recommended as the best OpenGL maths library, I've challenged myself to write my own simple maths library. This includes only exactly what I need for the engine and is built upon as and when need be. Currently the library only includes matrix and vector mathematics.
 
 ---
 
-I'm using GitHub and Visual Studio's Team Explorer to source control the project. This allows me to keep track of the project's development and also keeps my progress safe in the cloud. [I'm also using GitHub issues](https://github.com/george-mcdonagh/imat3606-cw1/issues) to make notes for myself on how things should work or things that need doing. [Doxygen](http://www.stack.nl/~dimitri/doxygen/) is being used to generate HTML documentation for the bulk of my source code. You can view the latest documentation [here](https://george-mcdonagh.github.io/imat3606-cw1/documentation/).
+I'm using GitHub and Visual Studio's Team Explorer to source control the project. This allows me to keep track of the project's development and also keeps my progress safe in the cloud. [I'm also using GitHub issues](https://github.com/george-mcdonagh/imat3606-cw1/issues) to make notes for myself on how things should work or things that need doing. [Doxygen](http://www.stack.nl/~dimitri/doxygen/) is being used to generate HTML documentation for the bulk of my source code. __You can view the latest documentation by downloading the repository and opening ```docs/documentation/index.html``` in your favourite browser__.
