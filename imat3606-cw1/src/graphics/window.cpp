@@ -14,7 +14,8 @@
 using namespace engine::graphics;
 
 
-Window::Window() { }
+Window::Window() 
+	: Window(640, 480, "New Window", true) { }
 
 Window::Window(int width, int height, const char* title, bool makeCurrent)
 	: m_dimensions(width, height)

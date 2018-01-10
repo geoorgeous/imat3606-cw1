@@ -1,20 +1,4 @@
 var searchData=
 [
-  ['magnitude',['magnitude',['../classengine_1_1maths_1_1_vec2.html#afdf4c645f0df071759a34d312c50aa3b',1,'engine::maths::Vec2::magnitude()'],['../classengine_1_1maths_1_1_vec3.html#ae4ba972fb732b7ced992cc2807e580cd',1,'engine::maths::Vec3::magnitude()'],['../classengine_1_1maths_1_1_vec4.html#a738b378a283e1a37fdcd3540c220e4cd',1,'engine::maths::Vec4::magnitude()']]],
-  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
-  ['mainwindow',['mainWindow',['../main_8cpp.html#a08a73af5a5b819c1000f7d6b21191e21',1,'main.cpp']]],
-  ['makecurrent',['makeCurrent',['../classengine_1_1graphics_1_1_window.html#a1ebbfc7cd6e34ca3d70257305a97b525',1,'engine::graphics::Window']]],
-  ['mat2',['Mat2',['../classengine_1_1maths_1_1_mat2.html',1,'engine::maths::Mat2'],['../classengine_1_1maths_1_1_mat2.html#abc8400963859dab0d098ce9e34390cdb',1,'engine::maths::Mat2::Mat2()'],['../classengine_1_1maths_1_1_mat2.html#a56e57d123fc04cf834cc8a88df63a65c',1,'engine::maths::Mat2::Mat2(float diagonal)'],['../classengine_1_1maths_1_1_mat2.html#a47c831f3fba8d27a033060a4b7d7807c',1,'engine::maths::Mat2::Mat2(float values[4])'],['../classengine_1_1maths_1_1_mat2.html#a52a188a0c32d392dde58d009a0cd52c7',1,'engine::maths::Mat2::Mat2(float c1x, float c1y, float c2x, float c2y)'],['../classengine_1_1maths_1_1_mat2.html#af7c10b24f4649c66845cc7f622a304b2',1,'engine::maths::Mat2::Mat2(const Vec2 &amp;col1, const Vec2 &amp;col2)']]],
-  ['mat2_2ecpp',['mat2.cpp',['../mat2_8cpp.html',1,'']]],
-  ['mat2_2eh',['mat2.h',['../mat2_8h.html',1,'']]],
-  ['mat3',['Mat3',['../classengine_1_1maths_1_1_mat3.html',1,'engine::maths::Mat3'],['../classengine_1_1maths_1_1_mat3.html#a9c4052ded561a99e5100ab43a799c44e',1,'engine::maths::Mat3::Mat3()'],['../classengine_1_1maths_1_1_mat3.html#a3fd8d7ffe4c32e1ad4c03efd8d514f21',1,'engine::maths::Mat3::Mat3(float diagonal)'],['../classengine_1_1maths_1_1_mat3.html#ad70e5852afcbcb21d84a172a5078dd27',1,'engine::maths::Mat3::Mat3(float values[9])'],['../classengine_1_1maths_1_1_mat3.html#a10ea4b0247fcf554f8006b93eadce82f',1,'engine::maths::Mat3::Mat3(float c1x, float c1y, float c1z, float c2x, float c2y, float c2z, float c3x, float c3y, float c3z)'],['../classengine_1_1maths_1_1_mat3.html#ac786552c6acd3389b1989850a9f18b1a',1,'engine::maths::Mat3::Mat3(const Vec3 &amp;col1, const Vec3 &amp;col2, const Vec3 &amp;col3)'],['../classengine_1_1maths_1_1_mat3.html#ae3e00a930c7ec828099bdc90bd6b95a0',1,'engine::maths::Mat3::Mat3(const Mat4 &amp;mat4)']]],
-  ['mat3_2ecpp',['mat3.cpp',['../mat3_8cpp.html',1,'']]],
-  ['mat3_2eh',['mat3.h',['../mat3_8h.html',1,'']]],
-  ['mat4',['Mat4',['../classengine_1_1maths_1_1_mat4.html',1,'engine::maths::Mat4'],['../classengine_1_1maths_1_1_mat4.html#a53cb3c6c2a0b594345f0107b6c1fcc37',1,'engine::maths::Mat4::Mat4()'],['../classengine_1_1maths_1_1_mat4.html#a0325b0f8dd0a07dfcec5372fc7c93327',1,'engine::maths::Mat4::Mat4(float diagonal)'],['../classengine_1_1maths_1_1_mat4.html#a0154e1ef41f3c8057b8b8665efe46d3e',1,'engine::maths::Mat4::Mat4(float values[16])'],['../classengine_1_1maths_1_1_mat4.html#a81f72be4e6c29154fc615cd58c75443f',1,'engine::maths::Mat4::Mat4(float c1x, float c1y, float c1z, float c1w, float c2x, float c2y, float c2z, float c2w, float c3x, float c3y, float c3z, float c3w, float c4x, float c4y, float c4z, float c4w)'],['../classengine_1_1maths_1_1_mat4.html#a41fb0ec4b5f0dedccde6a376deb28eb1',1,'engine::maths::Mat4::Mat4(const maths::Vec4 &amp;col1, const maths::Vec4 &amp;col2, const maths::Vec4 &amp;col3, const maths::Vec4 &amp;col4)'],['../classengine_1_1maths_1_1_mat4.html#a112311a7233504a5e48258c55e42a705',1,'engine::maths::Mat4::Mat4(const maths::Mat3 &amp;mat3)']]],
-  ['mat4_2ecpp',['mat4.cpp',['../mat4_8cpp.html',1,'']]],
-  ['mat4_2eh',['mat4.h',['../mat4_8h.html',1,'']]],
-  ['math_5fpi',['MATH_PI',['../maths_8h.html#ac58cbaeae310f551049f77b7c098599e',1,'maths.h']]],
-  ['maths_2ecpp',['maths.cpp',['../maths_8cpp.html',1,'']]],
-  ['maths_2eh',['maths.h',['../maths_8h.html',1,'']]]
+  ['knullref',['kNullRef',['../namespace_json.html#ab30055b4bbd82aecaca57ccecd63bbe6',1,'Json']]]
 ];

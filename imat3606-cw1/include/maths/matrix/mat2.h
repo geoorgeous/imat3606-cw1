@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file mat2.h
- * @brief Header file for the Mat2 class.
- * @author George McDonagh */
+  * @file mat2.h
+  * @brief Header file for the Mat2 class.
+  * @author George McDonagh */
 
 
 // Local includes

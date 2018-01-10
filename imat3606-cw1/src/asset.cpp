@@ -14,7 +14,7 @@ using namespace engine;
 Asset::Asset(const char* filepath)
 	: m_filepath(filepath), m_isLoaded(false) { }
 
-std::string Asset::getLoadErrorString()
+const std::string& Asset::getLoadErrorString() const
 {
 	return m_loadErrorString;
 }

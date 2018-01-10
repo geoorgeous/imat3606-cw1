@@ -42,12 +42,12 @@ namespace engine { namespace graphics {
 	class Shader
 	{
 	public:
-		//! Create a Shader object.
-		/*! Create a shader object by specifying its type and source string/filepath. 
+		//! Shader constructor.
+		/*! Construct a shader object by specifying its type and passing its source. 
 		  * @param type The Shader's ShaderType.
 		  * @param cstr The Shader's source code.
-		  * @warning A @p type value of ShaderType::NONE is invalid and will default to ShaderType::VERTEX. */
-		Shader(ShaderType type, const char* cstr);
+		  * @warning If ShaderType::NONE is passed as the argument for @p type it will default to ShaderType::VERTEX. */
+		Shader(ShaderType type, const char* source);
 
 		//! Destructor.
 		~Shader();
@@ -57,18 +57,20 @@ namespace engine { namespace graphics {
 		ShaderType type() const;
 
 		//! Get the Shader's source as a string.
+		/*! @return A nonmutable reference to the Shader's stored source string. */
 		const std::string& source() const;
 
 		//! Get the Shader's OpenGL ID.
+		/*! @return OpenGL ID for the Shader object. */
 		GLuint id() const;
 
 		//! Get the Shader's compilation state.
-		/*! @returns True if the Shader successfully compiled upon creation. */
+		/*! @return If the Shader successfully compiled upon creation then this function will return @p true. */
 		bool compiled() const;
 
 	private:
 		ShaderType m_type; /*!< The Shader's ShaderType. */
-		std::string m_source; /*!< The shader's source code as a string. */
+		std::string m_source; /*!< The shader's source code stored as a string. */
 		GLuint m_id; /*!< The Shader's OpenGL ID. */
 
 		//! Copy-prohibitting copy contructor.

@@ -23,7 +23,7 @@ MeshComponent::MeshComponent(const graphics::Mesh* mesh)
 
 MeshComponent::~MeshComponent() { }
 
-const graphics::Mesh* MeshComponent::mesh()
+const graphics::Mesh*& MeshComponent::mesh()
 {
 	return m_mesh;
 }

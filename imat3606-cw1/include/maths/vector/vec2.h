@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file vec2.h
- * @brief Header file for the Vec2 class.
- * @author George McDonagh */
+  * @file vec2.h
+  * @brief Header file for the Vec2 class.
+  * @author George McDonagh */
 
 
 // Local includes

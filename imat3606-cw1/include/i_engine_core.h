@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file i_engine_core.h 
- * @brief Interface for engine core implementations.
- * @author George McDonagh */
+  * @file i_engine_core.h 
+  * @brief Interface for engine core implementations.
+  * @author George McDonagh */
 
 
 // Defines
@@ -15,6 +15,7 @@
 
 #include <memory>
 #include <string>
+
 
 // Namespaces
 
@@ -32,7 +33,7 @@ namespace engine {
 
 
 	//! Engine core interface.
-	/*! Interface for any engine core implementations. See member function documentation for implementation requirements. */
+	/*! Interface for any engine core implementations. See member function documentation for implementation specifics. */
 	class IEngineCore
 	{
 	public:

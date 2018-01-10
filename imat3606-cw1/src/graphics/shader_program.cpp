@@ -25,10 +25,13 @@ ShaderProgram::~ShaderProgram()
 	unload();
 }
 
-void ShaderProgram::load()
+bool ShaderProgram::load()
 {
 	if (!m_isLoaded)
 	{
+		// Make sure load error string is reset.
+		m_loadErrorString = "";
+
 		m_id = glCreateProgram();
 
 		std::ifstream stream(m_filepath);
@@ -79,6 +82,8 @@ void ShaderProgram::load()
 		if (linked())
 			m_isLoaded = true;
 	}
+
+	return m_isLoaded;
 }
 
 void ShaderProgram::unload()

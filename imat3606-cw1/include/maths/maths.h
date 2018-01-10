@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file maths.h
- * @brief Header file containing maths classes and structs
- * @author George McDonagh */
+  * @file maths.h
+  * @brief Header file containing maths classes and structs
+  * @author George McDonagh */
 
 
 // External includes

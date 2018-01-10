@@ -38,8 +38,12 @@ namespace engine { namespace graphics {
 		//! Shader destructor which frees OpenGL Shader program.
 		~ShaderProgram();
 
-		void load() override;
+		//! Load the ShaderProgram in to memory.
+		/*! @note This function is preformed upon a SHaderProgram's construction. */
+		bool load() override;
 
+		//! Unload the ShaderProgram from memory.
+		/*! @note This function is preformed upon a SHaderProgram's destruction. */
 		void unload() override;
 
 		//! Get's the Shader object's OpenGL ID. 
@@ -89,7 +93,7 @@ namespace engine { namespace graphics {
 		bool linked() const;
 
 	private:
-		GLuint m_id; /*!< The shader program ID OpenGL stores. */
+		GLuint m_id; /*!< The shader program ID OpenGL generates. */
 
 		//! Copy-prohibitting copy contructor.
 		/*! @param shaderProgram The ShaderProgram object to copy from.

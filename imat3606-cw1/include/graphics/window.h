@@ -23,19 +23,20 @@
 
 namespace engine { namespace graphics {
 
-	//! GLFWwindow wrapper-class.
-	/*! Wraps around GLFW functionality for creating and using windows. */
+	//! @p GLFWwindow wrapper-class.
+	/*! Wraps up GLFW functionality for creating and using OpenGL contexts. */
 	class Window
 	{
 	public:
-		//! Default constructor
+		//! Constructor
+		/*! Constructs a 640 x 420 window which is then set to as the current context. */
 		Window();
 
 		//! Constructs a Window with a specified width, height, and title.
 		/*! @param width The width of the Window in pixels.
 		  * @param height The height of the Window in pixels.
 		  * @param title The title of the Window - this string appears at the top of the Window.
-		  * @param makeCurrent If passed as true then the Window will immediately become the current OpenGL context upon creation. */
+		  * @param makeCurrent If passed as true then the Window will immediately become the current OpenGL context after successful construction. */
 		Window(int width, int height, const char* title, bool makeCurrent = false);
 
 		//! Default desctructor.
@@ -47,15 +48,15 @@ namespace engine { namespace graphics {
 		bool created() const;
 
 		//! Get the 2D dimensions of the window.
-		/*! @return A 2D vector containing the width and height of the window as @p x and @p y components respectively. */
+		/*! @return A reference to an immutable 2D vector. The width and height of the window as @p x and @p y components respectively. */
 		const maths::Vec2& getDimensions() const;
 
 		//! Cursor position inside the Window.
-		/*! @return The pixel X and Y position of the cursor relative to the top-left corner of ther Window context. */
+		/*! @return A reference to an immutable 2D vector. The X and Y position of the cursor relative to the top-left pixel of the Window's context. */
 		const maths::Vec2& cursorPos() const;
 
 		//! Cursor position delta.
-		/*! @return The X and Y change in the cursor position since the last event poll. */
+		/*! @return A reference to an immutable 2D vector. The X and Y change (delta) in the cursor position since the last GLFW event poll. */
 		const maths::Vec2& cursorPosDelta() const;
 
 		//! State of the window's cursor.
@@ -94,6 +95,7 @@ namespace engine { namespace graphics {
 		void close();
 
 		//! Preforms pre-draw logic.
+		/*! Clears the GLFW context. This should be called before drawing with OpenGL. */
 		void clear();
 
 		//! Preforms post-draw logic.

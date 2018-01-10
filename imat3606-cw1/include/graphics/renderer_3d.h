@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file renderer_3d.h
- * @brief Header file for the Renderer3D class.
- * @author George McDonagh */
+  * @file renderer_3d.h
+  * @brief Header file for the Renderer3D class.
+  * @author George McDonagh */
 
 
 // External includes
@@ -20,18 +20,25 @@
 #include "mesh_component.h"
 
 
+// Namespaces
+
 namespace engine { namespace graphics {
 
+	//! Responsible for 3D rendering.
 	class Renderer3D {
 	public:
+		//! Renderer3D constructor.
 		Renderer3D();
 
+		//! Renderer3D destructor.
 		~Renderer3D();
 
+		//! Renders a given Scene3D.
+		/*! @param scene The 3D scene to be rendered by the renderer. */
 		void renderScene(graphics::Scene3D& scene);
 
 	private:
-		ShaderProgram* m_shaderProgram;
+		ShaderProgram* m_shaderProgram; /*!< Pointer to the ShaderProgram which the renderer will use while rendering. */
 	};
 
 } }

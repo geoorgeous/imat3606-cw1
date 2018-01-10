@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file mat3.h
- * @brief Header file for the Mat3 class.
- * @author George McDonagh */
+  * @file mat3.h
+  * @brief Header file for the Mat3 class.
+  * @author George McDonagh */
 
 
 // Local includes

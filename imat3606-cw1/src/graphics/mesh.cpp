@@ -169,16 +169,15 @@ engine::graphics::Mesh::~Mesh()
 	unload();
 }
 
-void engine::graphics::Mesh::load()
+bool engine::graphics::Mesh::load()
 {
 	if (!m_isLoaded)
 	{
+		// Make sure load error string is reset.
+		m_loadErrorString = "";
+
 		Assimp::Importer importer;
 		const aiScene* scene = importer.ReadFile(m_filepath, NULL);
-
-		// Make sure load error string is reset.
-
-		m_loadErrorString = "";
 
 		if (!scene)
 			m_loadErrorString = importer.GetErrorString();
@@ -190,6 +189,8 @@ void engine::graphics::Mesh::load()
 			m_isLoaded = true;
 		}
 	}
+
+	return m_isLoaded;
 }
 
 void engine::graphics::Mesh::unload()

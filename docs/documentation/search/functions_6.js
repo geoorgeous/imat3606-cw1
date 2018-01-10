@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['id',['id',['../classengine_1_1graphics_1_1_shader.html#a97631fd842daf03b2ed9898079fe2c82',1,'engine::graphics::Shader']]],
   ['identitymat2',['identityMat2',['../namespaceengine_1_1maths.html#a4b5c48ed44ad51761f8a307388975ae6',1,'engine::maths']]],
   ['identitymat3',['identityMat3',['../namespaceengine_1_1maths.html#ae233c3e80f9cda338fbe43d0d24d90e6',1,'engine::maths']]],
   ['identitymat4',['identityMat4',['../namespaceengine_1_1maths.html#a3395aab486145d3df31164be808b4610',1,'engine::maths']]],
@@ -14,11 +15,10 @@ var searchData=
   ['imgui_5fimplglfwgl3_5frenderdrawlists',['ImGui_ImplGlfwGL3_RenderDrawLists',['../imgui__impl_8cpp.html#a8d298f7ce4fde0d0ebd285630f901ba1',1,'imgui_impl.cpp']]],
   ['imgui_5fimplglfwgl3_5fscrollcallback',['ImGui_ImplGlfwGL3_ScrollCallback',['../imgui__impl_8h.html#ab81fa500dc3c0abce8b14fa499a54b41',1,'ImGui_ImplGlfwGL3_ScrollCallback(GLFWwindow *window, double xoffset, double yoffset):&#160;imgui_impl.cpp'],['../imgui__impl_8cpp.html#afdbd10b57100cf593aedc25d329df5c2',1,'ImGui_ImplGlfwGL3_ScrollCallback(GLFWwindow *, double, double yoffset):&#160;imgui_impl.cpp']]],
   ['imgui_5fimplglfwgl3_5fshutdown',['ImGui_ImplGlfwGL3_Shutdown',['../imgui__impl_8h.html#a47f4f023079ecbc45e7d898541ac7b6d',1,'ImGui_ImplGlfwGL3_Shutdown():&#160;imgui_impl.cpp'],['../imgui__impl_8cpp.html#a034756d657dceda4a9e6df6cbae93dff',1,'ImGui_ImplGlfwGL3_Shutdown():&#160;imgui_impl.cpp']]],
-  ['init',['init',['../main_8cpp.html#aee8048628ff2b5c026c9e15acdcaacb8',1,'main.cpp']]],
-  ['initglew',['initGLEW',['../main_8cpp.html#abf3f877272272f56bf54927898549a72',1,'main.cpp']]],
-  ['initglfw',['initGLFW',['../main_8cpp.html#aa76a5dd28427216d541ac05e815a9552',1,'main.cpp']]],
+  ['init',['init',['../classengine_1_1_engine_core.html#aefe3482bd9479431d333a40d810169d4',1,'engine::EngineCore::init()'],['../classengine_1_1_i_engine_core.html#afc53d9add0497068643767804ef2e714',1,'engine::IEngineCore::init()']]],
   ['inverse',['inverse',['../namespaceengine_1_1maths.html#ad6d5833cd85b589f7a54898275e16a25',1,'engine::maths::inverse(const Mat2 &amp;mat2)'],['../namespaceengine_1_1maths.html#a525335001ee551c5641631715b2d4ed3',1,'engine::maths::inverse(const Mat3 &amp;mat3)'],['../namespaceengine_1_1maths.html#affe1c6161d968a4a301bc6a4073facb3',1,'engine::maths::inverse(const Mat4 &amp;mat4)']]],
   ['iscursordisabled',['isCursorDisabled',['../classengine_1_1graphics_1_1_window.html#acd5504bc46c61dfbe66c5b5458213bd9',1,'engine::graphics::Window']]],
   ['iskeydown',['isKeyDown',['../classengine_1_1graphics_1_1_window.html#a68204fc598f1249c624cf1661952307d',1,'engine::graphics::Window']]],
-  ['iskeystroked',['isKeyStroked',['../classengine_1_1graphics_1_1_window.html#a6180413398e468586818eab77fb893dc',1,'engine::graphics::Window']]]
+  ['iskeystroked',['isKeyStroked',['../classengine_1_1graphics_1_1_window.html#a6180413398e468586818eab77fb893dc',1,'engine::graphics::Window']]],
+  ['isloaded',['isLoaded',['../classengine_1_1_asset.html#a1463fe2f61658a2c1c45ed8c5e86f1e7',1,'engine::Asset']]]
 ];

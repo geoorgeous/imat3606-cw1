@@ -1,22 +1,4 @@
 var searchData=
 [
-  ['log_5fcc_5fblack',['LOG_CC_BLACK',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa741b526a8fec905636205c2021bf8c91',1,'engine::utils']]],
-  ['log_5fcc_5fblue',['LOG_CC_BLUE',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa8359eb27087047b550beb66f6464299d',1,'engine::utils']]],
-  ['log_5fcc_5fcrimson',['LOG_CC_CRIMSON',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa053c29c06999041eca83f0a3c153557b',1,'engine::utils']]],
-  ['log_5fcc_5fdarkgreen',['LOG_CC_DARKGREEN',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fabb9c8db818aa43a120e4f1230aa51fbe',1,'engine::utils']]],
-  ['log_5fcc_5fdarkyellow',['LOG_CC_DARKYELLOW',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa7029efc7285777781c4bf759ddb7958c',1,'engine::utils']]],
-  ['log_5fcc_5fdefaultback',['LOG_CC_DEFAULTBACK',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa88bae0dfeaba5353c0307f9bd2ffb82b',1,'engine::utils']]],
-  ['log_5fcc_5fdefaultfore',['LOG_CC_DEFAULTFORE',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa3df251621bc7d8a81d3e2d10a5927b6e',1,'engine::utils']]],
-  ['log_5fcc_5fgreen',['LOG_CC_GREEN',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fadcaf9b3c551d394597c5164f89e45200',1,'engine::utils']]],
-  ['log_5fcc_5fgrey',['LOG_CC_GREY',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa2159f4acf4c000f453ee7604e5eea803',1,'engine::utils']]],
-  ['log_5fcc_5flightblue',['LOG_CC_LIGHTBLUE',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fab0f4611d6e474502b5a90ca8100c4840',1,'engine::utils']]],
-  ['log_5fcc_5fnavy',['LOG_CC_NAVY',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fac21c30e50079860a0f6f73cce203f0f6',1,'engine::utils']]],
-  ['log_5fcc_5foffwhite',['LOG_CC_OFFWHITE',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fada6a6b7c37197b5f79756ff84c719e91',1,'engine::utils']]],
-  ['log_5fcc_5fpink',['LOG_CC_PINK',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa8579b714c1ca150749f7a777aa86f276',1,'engine::utils']]],
-  ['log_5fcc_5fpurple',['LOG_CC_PURPLE',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa7a7ab57e26b193621687b04b9ea44d79',1,'engine::utils']]],
-  ['log_5fcc_5fred',['LOG_CC_RED',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fad2666933299ab79658d0340b9317316c',1,'engine::utils']]],
-  ['log_5fcc_5fteal',['LOG_CC_TEAL',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa6d3398af471b338b7ecc4585a9fb9080',1,'engine::utils']]],
-  ['log_5fcc_5funchanged',['LOG_CC_UNCHANGED',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa9d395461a093e1a2ac850d98c18045ec',1,'engine::utils']]],
-  ['log_5fcc_5fwhite',['LOG_CC_WHITE',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa273f1d8852001eb12da080b6f92c2288',1,'engine::utils']]],
-  ['log_5fcc_5fyellow',['LOG_CC_YELLOW',['../namespaceengine_1_1utils.html#af7ded56ea4f290ab3742cbf8ce739a4fa3f78031b75f1aabd1a7fa253ca48f9e1',1,'engine::utils']]]
+  ['fragment',['FRAGMENT',['../namespaceengine_1_1graphics.html#adfd03c3b71dc8003e0d6dbea28924a46a8fe07dc3127e0e87c8a5886a8af94144',1,'engine::graphics']]]
 ];

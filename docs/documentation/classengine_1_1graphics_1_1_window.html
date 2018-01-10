@@ -89,7 +89,7 @@ $(document).ready(function(){initNavTree('classengine_1_1graphics_1_1_window.htm
 </div><!--header-->
 <div class="contents">
 
-<p>GLFWwindow wrapper-class.  
+<p><code>GLFWwindow</code> wrapper-class.  
  <a href="classengine_1_1graphics_1_1_window.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="window_8h_source.html">window.h</a>&gt;</code></p>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classengine_1_1graphics_1_1_window.htm
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a74e6087da23d3c24e9fac0245e5ec92c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1graphics_1_1_window.html#a74e6087da23d3c24e9fac0245e5ec92c">Window</a> ()</td></tr>
-<tr class="memdesc:a74e6087da23d3c24e9fac0245e5ec92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a74e6087da23d3c24e9fac0245e5ec92c">More...</a><br /></td></tr>
+<tr class="memdesc:a74e6087da23d3c24e9fac0245e5ec92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a74e6087da23d3c24e9fac0245e5ec92c">More...</a><br /></td></tr>
 <tr class="separator:a74e6087da23d3c24e9fac0245e5ec92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71baabec2c7dc898096cde133a706a97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classengine_1_1graphics_1_1_window.html#a71baabec2c7dc898096cde133a706a97">Window</a> (int width, int height, const char *title, bool <a class="el" href="classengine_1_1graphics_1_1_window.html#a1ebbfc7cd6e34ca3d70257305a97b525">makeCurrent</a>=false)</td></tr>
 <tr class="memdesc:a71baabec2c7dc898096cde133a706a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a> with a specified width, height, and title.  <a href="#a71baabec2c7dc898096cde133a706a97">More...</a><br /></td></tr>
@@ -152,8 +152,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af6ffedb8d12d5551bdb4c298de87ed56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>GLFWwindow wrapper-class. </p>
-<p>Wraps around GLFW functionality for creating and using windows. </p>
+<div class="textblock"><p><code>GLFWwindow</code> wrapper-class. </p>
+<p>Wraps up GLFW functionality for creating and using OpenGL contexts. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a74e6087da23d3c24e9fac0245e5ec92c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74e6087da23d3c24e9fac0245e5ec92c">&#9670;&nbsp;</a></span>Window() <span class="overload">[1/2]</span></h2>
@@ -170,7 +170,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Default constructor. </p>
+<p>Constructor. </p>
+<p>Constructs a 640 x 420 window which is then set to as the current context. </p>
 
 </div>
 </div>
@@ -218,7 +219,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">width</td><td>The width of the <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a> in pixels. </td></tr>
     <tr><td class="paramname">height</td><td>The height of the <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a> in pixels. </td></tr>
     <tr><td class="paramname">title</td><td>The title of the <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a> - this string appears at the top of the <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a>. </td></tr>
-    <tr><td class="paramname">makeCurrent</td><td>If passed as true then the <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a> will immediately become the current OpenGL context upon creation. </td></tr>
+    <tr><td class="paramname">makeCurrent</td><td>If passed as true then the <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a> will immediately become the current OpenGL context after successful construction. </td></tr>
   </table>
   </dd>
 </dl>
@@ -262,6 +263,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Preforms pre-draw logic. </p>
+<p>Clears the GLFW context. This should be called before drawing with OpenGL. </p>
 
 </div>
 </div>
@@ -321,7 +323,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cursor position inside the <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>The pixel X and Y position of the cursor relative to the top-left corner of ther <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a> context. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to an immutable 2D vector. The X and Y position of the cursor relative to the top-left pixel of the <a class="el" href="classengine_1_1graphics_1_1_window.html" title="GLFWwindow wrapper-class. ">Window</a>'s context. </dd></dl>
 
 </div>
 </div>
@@ -341,7 +343,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cursor position delta. </p>
-<dl class="section return"><dt>Returns</dt><dd>The X and Y change in the cursor position since the last event poll. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to an immutable 2D vector. The X and Y change (delta) in the cursor position since the last GLFW event poll. </dd></dl>
 
 </div>
 </div>
@@ -399,7 +401,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the 2D dimensions of the window. </p>
-<dl class="section return"><dt>Returns</dt><dd>A 2D vector containing the width and height of the window as <code>x</code> and <code>y</code> components respectively. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to an immutable 2D vector. The width and height of the window as <code>x</code> and <code>y</code> components respectively. </dd></dl>
 
 </div>
 </div>

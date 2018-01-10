@@ -33,6 +33,7 @@
 
 
 // Verbose namespace commenting for doxygen documentation...
+
 //! Primary namespace for FYP project
 namespace engine {
 
@@ -46,7 +47,7 @@ namespace engine {
 	namespace utils {}
 
 
-	//! Core engine implementation using GLFW and GLEW.
+	//! EngineCore implementation using GLFW and GLEW.
 	class EngineCore : public IEngineCore 
 	{
 	public:

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['math_5fpi',['MATH_PI',['../maths_8h.html#ac58cbaeae310f551049f77b7c098599e',1,'maths.h']]]
+  ['gl_5fcall',['GL_CALL',['../logger_8h.html#add165165c35549fda9fb0100e16e9739',1,'logger.h']]]
 ];

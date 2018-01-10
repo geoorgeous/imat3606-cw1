@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file vec3.h
- * @brief Header file for the Vec3 class.
- * @author George McDonagh */
+  * @file vec3.h
+  * @brief Header file for the Vec3 class.
+  * @author George McDonagh */
 
 
 // Local includes

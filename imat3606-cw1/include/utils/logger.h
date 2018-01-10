@@ -1,9 +1,9 @@
 #pragma once
 
 /*!
- * @file logger.h
- * @brief Header file for the Logger class.
- * @author George McDonagh */
+  * @file logger.h
+  * @brief Header file for the Logger class.
+  * @author George McDonagh */
 
 
 // External includes
@@ -26,7 +26,7 @@
 #define ASSERT(x)\
 	if(!(x)) __debugbreak();
 
-// use when calling functions that might raise an OpenGL error.
+// Use when calling functions that might raise an OpenGL error.
 #define GL_CALL(x)\
 	engine::utils::Logger::glClearErrorQueue();\
 	x;\
@@ -38,6 +38,7 @@
 namespace engine { namespace utils { 
 
 	//! The different Console output colours.
+	/*! ConsoleColour enum base types are short integers. */
 	enum ConsoleColour : short
 	{
 		LOG_CC_UNCHANGED	= -1,
@@ -107,16 +108,18 @@ namespace engine { namespace utils {
 		//! Updates the console colours to match the stored values.
 		static void updateConsoleColours();
 
-		//! Logs a string.
-		/*! Logs the specified string using the colours that are currently being used.
-		  * @param string The string to output to the console. */
+		//! Logs a formatted string.
+		/*! Logs the specified string using the colours that are currently being used. The string may be formatted using the same formatting methods as printf.
+		  * @param fmt The formatted string to output to the console.
+		  * @param args The arguments to use in the formatted string @p fmt. */
 		static void log(const char* fmt, fmt::ArgList args);
 
-		//! Logs a string using the specified colours.
+		//! Logs a string using specified colours.
 		/*! Logs the specified string using a specified colour and background colour.
-		  * @param string The string to output to the console.
 		  * @param foreColour The colour to use for the string's text.
-		  * @param backColour The colour to use for the stirng's background. */
+		  * @param backColour The colour to use for the stirng's background.
+		  * @param fmt The formatted string to output to the console.
+		  * @param args The arguments to use in the formatted string @p fmt. */
 		static void log(ConsoleColour foreColour, ConsoleColour backColour, const char* fmt, fmt::ArgList args);
 
 	public:
