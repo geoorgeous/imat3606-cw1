@@ -8,7 +8,28 @@ Welcome to the repository for my IMAT3606 (Games Programming) project! This proj
  - Data-driven engine architecture
  - Object serialization and parsing (JSON)
  
- ---
+ I'm using GitHub and Visual Studio's Team Explorer to source control the project. This allows me to keep track of the project's development and also keeps my progress safe in the cloud. [I'm also using GitHub issues](https://github.com/george-mcdonagh/imat3606-cw1/issues) to make notes for myself on how things should work or things that need doing. [Doxygen](http://www.stack.nl/~dimitri/doxygen/) is being used to generate HTML documentation for the bulk of my source code. __You can view the latest documentation by downloading the repository and opening ```docs/documentation/index.html``` in your favourite browser__.
+
+## Project Progress
+
+A bird's eye view of the progress of this project according to the [project specification](https://github.com/george-mcdonagh/imat3606-cw1/blob/master/docs/coursework_spec.docx).
+ 
+ - [ ] Components
+ - [x] Interfaces
+ - [ ] Data Driven Architexture
+ - [ ] Input
+ - [ ] Camera
+   - [x] First Person
+   - [ ] Third Person
+ - [ ] Asset Pipeline
+   - [ ] Scene Creation, Exporting, Importing with Maya
+ - [ ] Software testing
+   - [ ] Unit Tests
+   - [ ] Runtime Debugging GUI
+ - [ ] Professional Practices
+   - [x] Documentation
+   - [ ] Project Brief
+   - [x] Source Control Management
 
 ## Directory Structure
 
@@ -24,8 +45,6 @@ The project directory is laid out as follows:
    - __```res/```__: Project resources (assets, data files, etc).
    - __```src/```__: Project source files.
    - __```temp/```__: Visual Studio intermediate/temporary files for each build configuration.
-   
----
 
 ## Project Dependencies
 
@@ -42,7 +61,3 @@ __Name__ | __Use__
 [__jsoncpp__](https://github.com/open-source-parsers/jsoncpp) | C++ library for interacting with JSON.
 
 While [GLM](https://glm.g-truc.net/0.9.8/index.html) is generally recommended as the best OpenGL maths library, I've challenged myself to write my own simple maths library. This includes only exactly what I need for the engine and is built upon as and when need be. Currently the library only includes matrix and vector mathematics.
-
----
-
-I'm using GitHub and Visual Studio's Team Explorer to source control the project. This allows me to keep track of the project's development and also keeps my progress safe in the cloud. [I'm also using GitHub issues](https://github.com/george-mcdonagh/imat3606-cw1/issues) to make notes for myself on how things should work or things that need doing. [Doxygen](http://www.stack.nl/~dimitri/doxygen/) is being used to generate HTML documentation for the bulk of my source code. __You can view the latest documentation by downloading the repository and opening ```docs/documentation/index.html``` in your favourite browser__.
