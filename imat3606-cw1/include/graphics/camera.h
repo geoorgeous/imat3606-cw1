@@ -37,20 +37,56 @@ namespace engine { namespace graphics {
 		~Camera();
 
 		//! Camera position.
-		/*! @returns A reference to the Camera object's position containing its X, Y, and Z position. */
+		/*! @return A reference to an immutable 3-component vector; the Camera object's position containing its X, Y, and Z position. */
 		const maths::Vec3& position() const;
 
+		//! Camera forwards direction.
+		/*! @return A reference to an immutable 3-component vector; the Camera's forward-facing direction. */
+		const maths::Vec3& direction() const;
+
 		//! Camera orientation around its own axis.
-		/*! @returns A reference to the Camera object's orientation containing its X, Y, and Z orientations. */
+		/*! @return A reference to an immutable 3-component vector; the Camera object's orientation containing its X, Y, and Z orientations. */
 		const maths::Vec3& orientation() const;
 
 		//! Gets a LookAt matrix constructed from the Camera's properties.
-		/*! @returns A reference to the Camera's cached View matrix. */
+		/*! @return A reference to an immutable 4x4 matrix; the Camera's cached view matrix. */
 		const maths::Mat4& getViewMatrix() const;
 
 		//! Gets a perspective projection matrix constructed from the Camera's properties.
-		/*! @returns A reference to the Camera's cached erspective matrix. */
+		/*! @return A reference to an immutable 4x4 matrix; the Camera's cached perspective matrix. */
 		const maths::Mat4& getPerspectiveMatrix() const;
+
+		//! Get the Camera's Field of View.
+		/*! @return A reference to an immutable float; the Camera's Field of View (in degrees). */
+		const float& fov() const;
+
+		//! Get the Camera's Field of View.
+		/*! @return A reference to a mutable float; the Camera's Field of View (in degrees). */
+		float& fov();
+
+		//! Get the Camera's asepect ratio.
+		/*! @return A reference to an immutable float; the Camera's Aspect Ratio. For a standard projection this would be the current context's @p width/height. */
+		const float& aspect() const;
+
+		//! Get the Camera's asepect ratio.
+		/*! @return A reference to a mutable float; the Camera's Aspect Ratio. For a standard projection this would be the current context's @p width/height. */
+		float& aspect();
+
+		//! Get the Camera's near-clip value.
+		/*! @return A reference to an immutable float; the number of units from the Camera that objects will start to render from. */
+		const float& nearClip() const;
+
+		//! Get the Camera's near-clip value.
+		/*! @return A reference to a mutable float; the number of units from the Camera that objects will start to render from. */
+		float& nearClip();
+
+		//! Get the Camera's far-clip value.
+		/*! @return A reference to an immutable float; the number of units from the Camera that objects will stop being rendered from. */
+		const float& farClip() const;
+
+		//! Get the Camera's far-clip value.
+		/*! @return A reference to a mutable float; the number of units from the Camera that objects will stop being rendered from. */
+		float& farClip();
 
 		//! Move the Camera object.
 		/*! Moves the position of the camera along its own axis.

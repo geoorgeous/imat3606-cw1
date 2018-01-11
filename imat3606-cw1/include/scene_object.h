@@ -16,6 +16,7 @@
 // Internal includes
 
 #include "component.h"
+#include "transform_component.h"
 
 
 // Namespaces
@@ -50,13 +51,21 @@ namespace engine {
 			// Only bother to attempt to find the component if it is a valid Component type.
 			if (std::is_base_of<Component, T>())
 			{
-				if (m_components.find(typeid(T)) != m_components.end())
+				if (!m_components.empty() && m_components.find(typeid(T)) != m_components.end())
 					return dynamic_cast<T*>(m_components[typeid(T)]);
 			}
 			else
 				utils::Logger::log("WARNING::SCENE_OBJECT::GET_COMPONENT - Type argument \"%s\" is not a valid Component type.", typeid(T).name());
 
 			return nullptr;
+		}
+
+		//! Check if the SceneObject has a Component of a certain type.
+		/*! @return True if the SceneObject owns a Component of type @p T. */
+		template <typename T>
+		bool hasComponent()
+		{
+			return !m_components.empty() && m_components.find(typeid(T)) != m_components.end();
 		}
 
 		//! Get the collection of SceneObject components.

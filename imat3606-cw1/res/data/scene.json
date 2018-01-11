@@ -1,0 +1,26 @@
+{
+   "camera" : {
+      "aspect" : 1,
+      "direction" : [ 0, 0, 1 ],
+      "far" : 1000,
+      "fov" : 67,
+      "near" : 0.009999999776482582,
+      "position" : [ 0, 0, 15 ]
+   },
+   "objects" : [
+      {
+         "components" : [
+            {
+               "orientation" : [ 0, 0, 0 ],
+               "position" : [ 0, 0, 0 ],
+               "scale" : [ 1, 1, 1 ],
+               "type" : "class engine::TransformComponent"
+            },
+            {
+               "filepath" : "res/meshes/sphere.dae",
+               "type" : "class engine::MeshComponent"
+            }
+         ]
+      }
+   ]
+}

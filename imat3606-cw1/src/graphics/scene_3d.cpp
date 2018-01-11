@@ -32,9 +32,19 @@ void Scene3D::update()
 
 }
 
+const Camera& Scene3D::getCamera() const
+{
+	return m_camera;
+}
+
 Camera& Scene3D::getCamera()
 {
 	return m_camera;
+}
+
+const std::vector<engine::SceneObject*>& Scene3D::getObjects() const
+{
+	return m_objects;
 }
 
 std::vector<engine::SceneObject*>& Scene3D::getObjects()

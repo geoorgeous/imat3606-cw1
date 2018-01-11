@@ -51,6 +51,10 @@ namespace engine { namespace graphics {
 		/*! @return A reference to an immutable 2D vector. The width and height of the window as @p x and @p y components respectively. */
 		const maths::Vec2& getDimensions() const;
 
+		//! Get the Window's aspect ratio.
+		/*! @return The Window's aspect ratio (width / height). */
+		float getAspectRatio() const;
+
 		//! Cursor position inside the Window.
 		/*! @return A reference to an immutable 2D vector. The X and Y position of the cursor relative to the top-left pixel of the Window's context. */
 		const maths::Vec2& cursorPos() const;

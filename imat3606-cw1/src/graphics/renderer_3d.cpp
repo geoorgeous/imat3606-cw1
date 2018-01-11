@@ -31,7 +31,10 @@ void Renderer3D::renderScene(engine::graphics::Scene3D& scene)
 	std::vector<engine::SceneObject*>& objects = scene.getObjects();
 	for (auto it = objects.begin(); it != objects.end(); it++)
 	{
-		m_shaderProgram->setUniform_mat4("model", maths::Mat4(1.0f).data_ptr());
-		(*it)->getComponent<MeshComponent>()->mesh()->render();
+		if ((*it)->hasComponent<MeshComponent>())
+		{
+			m_shaderProgram->setUniform_mat4("model", maths::Mat4(1.0f).data_ptr());
+			(*it)->getComponent<MeshComponent>()->mesh()->render();
+		}
 	}
 }

@@ -60,6 +60,11 @@ const engine::maths::Vec2& Window::getDimensions() const
 	return m_dimensions;
 }
 
+float Window::getAspectRatio() const
+{
+	return m_dimensions.x() / m_dimensions.y();
+}
+
 const engine::maths::Vec2& Window::cursorPos() const
 {
 	return m_cursorPos;

@@ -63,6 +63,11 @@ const engine::maths::Vec3& Camera::position() const
 	return m_position;
 }
 
+const engine::maths::Vec3& Camera::direction() const
+{
+	return m_forward;
+}
+
 const engine::maths::Vec3& Camera::orientation() const
 {
 	return m_orientation;
@@ -76,6 +81,46 @@ const engine::maths::Mat4& Camera::getViewMatrix() const
 const engine::maths::Mat4& Camera::getPerspectiveMatrix() const
 {
 	return m_matPerspective;
+}
+
+const float& Camera::fov() const
+{
+	return m_fov;
+}
+
+float& Camera::fov()
+{
+	return m_fov;
+}
+
+const float& Camera::aspect() const
+{
+	return m_aspect;
+}
+
+float& Camera::aspect()
+{
+	return m_aspect;
+}
+
+const float& Camera::nearClip() const
+{
+	return m_nearClip;
+}
+
+float& Camera::nearClip()
+{
+	return m_nearClip;
+}
+
+const float& Camera::farClip() const
+{
+	return m_farClip;
+}
+
+float& Camera::farClip()
+{
+	return m_farClip;
 }
 
 void Camera::move(engine::maths::Vec3 offset)

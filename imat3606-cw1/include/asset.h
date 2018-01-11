@@ -29,6 +29,10 @@ namespace engine {
 
 		//! Unload the Asset's data from memory.
 		virtual void unload() = 0;
+
+		//! Get the Asset filepath.
+		/*! @return A reference to an immutable string; the Asset's filepath. */
+		const std::string& getFilepath() const;
 		
 		//! Get the error string generated froma failure to load.
 		/*! @return A reference to an immutable string. The error message generated when the Asset fails to load successfully. Returns an empty string if no error message was cached. */

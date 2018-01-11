@@ -119,7 +119,7 @@ void EngineCore::run(Game& game)
 
 		m_mainWindow->clear();
 
-		m_renderer3D->renderScene(game.currentScene());
+		m_renderer3D->renderScene(*game.currentScene());
 
 		ImGui::TextColored(ImVec4(1, 0, 0, 1), "%.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
 		ImGui::TextColored(ImVec4(0, 1, 0, 1), "\nInput controls");

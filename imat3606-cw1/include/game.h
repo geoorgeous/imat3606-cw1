@@ -32,10 +32,13 @@ namespace engine {
 		//! Game destructor.
 		~Game();
 
-		graphics::Scene3D& currentScene() const;
+		void load(const char* filepath);
+
+		std::shared_ptr<graphics::Scene3D>& currentScene();
 
 	private:
-		std::shared_ptr<graphics::Scene3D> m_currentScene;
+		 int m_currentSceneIndex;
+		 std::vector<std::shared_ptr<graphics::Scene3D>> m_scenes;
 	};
 	
 }

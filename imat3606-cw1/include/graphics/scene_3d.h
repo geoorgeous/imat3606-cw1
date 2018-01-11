@@ -34,11 +34,19 @@ namespace engine { namespace graphics {
 		void update();
 
 		//! Get the scene's Camera.
-		/*! @return A mutable reference to the scene's Camera. */
+		/*! @return A reference to an immutable Camera object; the scene's Camera. */
+		const Camera& getCamera() const;
+
+		//! Get the scene's Camera.
+		/*! @return A reference to a mutable Camera object; the scene's Camera. */
 		Camera& getCamera();
 
 		//! Get the scene's collection of SceneObjects.
-		/*! @return A mutable reference to the scene's vector of SceneObjects. */
+		/*! @return A reference to an immutable vector of SceneObject pointers. */
+		const std::vector<engine::SceneObject*>& getObjects() const;
+
+		//! Get the scene's collection of SceneObjects.
+		/*! @return A reference to a mutable vector of SceneObject pointers. */
 		std::vector<engine::SceneObject*>& getObjects();
 
 		//! Add a SceneObject to the scene.
